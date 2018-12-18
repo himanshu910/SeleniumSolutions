@@ -1,0 +1,250 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">All Courses</h3>
+        <h6 class="card-subtitle"></h6>
+
+
+        <!-- #################  Tabs  ############## -->
+
+        <ngb-tabset #t="ngbTabset">
+          <ngb-tab id="tab-selectbyid1" title="Cloud Computing">
+            <ng-template ngbTabContent>
+
+              <p class="p-t-20">
+
+                <li>Description:</li>
+
+                <li>This course is for those who are completely new to AWS. No prior AWS experience is required. We will introduce
+                  you to AWS, walk you through the process of setting up your own AWS account, and teach you the essentials
+                  to get you using AWS's core services.
+                </li>
+
+                <li>What you’ll learn:</li>
+                <li>Understand and use core services of Amazon Web Services (AWS)</li>
+                <li>Understand and use Identity and Access Management (IAM)</li>
+                <li>Understand and use Virtual Private Cloud (VPC)</li>
+                <li>Understand and use Simple Storage Service (S3)</li>
+                <li>Understand and use Elastic Cloud Compute (EC2)</li>
+                <li>Understand and use RDS/DynamoDB (databases)</li>
+                <li>Understand and use Simple Notification Service (SNS)</li>
+                <li>Understand and use CloudWatch (monitoring)</li>
+                <li>Understand and use Elastic Load Balancing (distributing traffic)</li>
+                <li>Understand and use Auto Scaling (scalable and elastic architecture)</li>
+                <li>Understand and use Route 53 (domains and DNS)</li>
+
+
+                <li>Who this course is for:</li>
+                <li>No prior AWS experience required</li>
+                <li>Looking for a simplified course on the basics of AWS</li>
+
+
+              </p>
+
+
+              <p> Course Content </p>
+
+
+              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                <ngb-panel title="Course Introduction">
+                  <ng-template ngbPanelContent>
+                    Welcome To AWS Essentials
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="Amazon Basics">
+                  <ng-template ngbPanelContent>
+                    <li>AWS Free Tier</li>
+                    <li>Create AWS Account</li>
+                    <li>How to Navigate to AWS Console</li>
+
+
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="Topic3">
+                  <ng-template ngbPanelContent>
+                    Description 3
+                  </ng-template>
+                </ngb-panel>
+              </ngb-accordion>
+
+
+
+              <p class="p-t-20">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+
+
+
+              <!-- #################Slide Show############## -->
+
+              <div class="col-md-6 col-xlg-5">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Carousel</h3>
+                    <h6 class="card-subtitle">This is basic Carousel</h6>
+                    <ngb-carousel>
+                      <ng-template ngbSlide>
+                        <img src="assets/images/big/img4.jpg" alt="Random first slide">
+                        <div class="carousel-caption">
+                          <h3 class="text-white font-bold">10 seconds between slides...</h3>
+                          <p>This carousel uses customized default values.</p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="assets/images/big/img5.jpg" alt="Random second slide">
+                        <div class="carousel-caption">
+                          <h3 class="text-white font-bold">No keyboard...</h3>
+                          <p>This carousel uses customized default values.</p>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img src="assets/images/big/img6.jpg" alt="Random third slide">
+                        <div class="carousel-caption">
+                          <h3 class="text-white font-bold">And no wrap after last slide.</h3>
+                          <p>This carousel uses customized default values.</p>
+                        </div>
+                      </ng-template>
+                    </ngb-carousel>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </ng-template>
+          </ngb-tab>
+
+
+
+
+
+          <ngb-tab id="tab-selectbyid2">
+
+
+            <ng-template ngbTabTitle><b>Fancy</b>Agile</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab id="tab-selectbyid3">
+            <ng-template ngbTabTitle><b>Fancy</b>Java</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+          <ngb-tab id="tab-selectbyid4">
+            <ng-template ngbTabTitle><b>Fancy</b>Maven</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+
+          <ngb-tab id="tab-selectbyid5">
+            <ng-template ngbTabTitle><b>Fancy</b>Jenkins</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+
+          <ngb-tab id="tab-selectbyid2">
+            <ng-template ngbTabTitle><b>Fancy</b>Agile</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+
+          <ngb-tab id="tab-selectbyid6">
+            <ng-template ngbTabTitle><b>Fancy</b>GIT</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+          <ngb-tab id="tab-selectbyid7">
+            <ng-template ngbTabTitle><b>Fancy</b>Angular</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+          <ngb-tab id="tab-selectbyid7">
+            <ng-template ngbTabTitle><b>Fancy</b>Protractor</ng-template>
+            <ng-template ngbTabContent>
+              <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco
+                ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+                tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </ng-template>
+          </ngb-tab>
+
+
+        </ngb-tabset>
+
+        <p>
+          <button class="btn btn-outline-primary" (click)="t.select('tab-selectbyid2')">Selected tab with "tab-selectbyid2" id</button>
+        </p>
+
+        <!-- #################  Time Selector  ############## -->
+
+        <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+        <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
+                    Meridian - {{meridian ? "ON" : "OFF"}}
+                </button>
+        <hr>
+        <pre>Selected time: {{time | json}}</pre>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

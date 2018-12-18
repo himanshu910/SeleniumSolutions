@@ -1,0 +1,199 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Course Name</h3>
+        <h6 class="card-subtitle">Welcome...</h6>
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+          <ngb-panel title="Topic1">
+            <ng-template ngbPanelContent>
+              Description 1
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Topic2">
+            <ng-template ngbPanelContent>`` Description 2
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="Topic3">
+            <ng-template ngbPanelContent>
+              Description 3
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+
+
+
+        <!-- ################# Closeable Alert ############## -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Closeable Alert</h3>
+            <h6 class="card-subtitle">This is closeable alert</h6>
+            <p *ngFor="let alert of alerts">
+              <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- #################Slide Show############## -->
+
+        <div class="col-md-6 col-xlg-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Carousel</h3>
+              <h6 class="card-subtitle">This is basic Carousel</h6>
+              <ngb-carousel>
+                <ng-template ngbSlide>
+                  <img src="assets/images/big/img4.jpg" alt="Random first slide">
+                  <div class="carousel-caption">
+                    <h3 class="text-white font-bold">10 seconds between slides...</h3>
+                    <p>This carousel uses customized default values.</p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img src="assets/images/big/img5.jpg" alt="Random second slide">
+                  <div class="carousel-caption">
+                    <h3 class="text-white font-bold">No keyboard...</h3>
+                    <p>This carousel uses customized default values.</p>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <img src="assets/images/big/img6.jpg" alt="Random third slide">
+                  <div class="carousel-caption">
+                    <h3 class="text-white font-bold">And no wrap after last slide.</h3>
+                    <p>This carousel uses customized default values.</p>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- #################Datepicker in a popup############## -->
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Datepicker in a popup</h3>
+              <h6 class="card-subtitle">This is datepicker with popup</h6>
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-addon" (click)="d.toggle()">
+                      <i class="fa fa-calendar"></i>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <hr/>
+              <pre>Model: {{ model2 | json }}</pre>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- #################  dropdown  ############## -->
+
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="dropdown-item">Option 1</button>
+            <button class="dropdown-item">Option 2</button>
+            <button class="dropdown-item">Option 3</button>
+          </div>
+        </div>
+
+        <!-- #################  modal  ############## -->
+
+
+
+        <!-- #################  Paginations  ############## -->
+ <div>
+        <div>Pagination with boundaryLinks</div>
+        <ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+
+        <hr>
+
+        <pre>Current page: {{page}}</pre>
+         </div>
+
+
+  <!-- #################  Tooltip  ############## -->
+ <div>
+ <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="Tooltip on top">
+                  Tooltip on top
+                </button>
+                 </div>
+
+
+
+  <!-- #################  progressbar  ############## -->
+   <div>
+                <p><ngb-progressbar showValue="true" type="success" [value]="25"></ngb-progressbar></p>
+                <p><ngb-progressbar [showValue]="true" type="info" [value]="50"></ngb-progressbar></p>
+                <p><ngb-progressbar showValue="true" type="primary" [value]="150" [max]="200"></ngb-progressbar></p>
+                <p><ngb-progressbar [showValue]="true" type="inverse" [value]="150" [max]="150"></ngb-progressbar></p>
+                <p><ngb-progressbar showValue="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
+                <p><ngb-progressbar [showValue]="true" type="danger" [value]="150" [max]="150"></ngb-progressbar></p>
+                 </div>
+
+
+
+  <!-- #################  Rating  ############## -->
+
+  
+
+  <!-- #################  Tabs  ############## -->
+
+              <ngb-tabset #t="ngbTabset">
+                  <ngb-tab id="tab-selectbyid1" title="Simple">
+                    <ng-template ngbTabContent>
+                      <p class="p-t-20">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                      master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+                      dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                      iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab id="tab-selectbyid2">
+                    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+                    <ng-template ngbTabContent>
+                      <p class="p-t-20">Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+                      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+                      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+                      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+                      sint qui sapiente accusamus tattooed echo park.</p>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+
+                <p>
+                  <button class="btn btn-outline-primary" (click)="t.select('tab-selectbyid2')">Selected tab with "tab-selectbyid2" id</button>
+                </p>
+
+  <!-- #################  Time Selector  ############## -->
+
+ <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+                <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
+                    Meridian - {{meridian ? "ON" : "OFF"}}
+                </button>
+                <hr>
+                <pre>Selected time: {{time | json}}</pre>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
