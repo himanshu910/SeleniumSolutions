@@ -2,26 +2,29 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { NgbdTestBasic } from './test.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Hero } from './hero';
+import { NgbdHeroBasic } from './heroes.component';
 
+import { HeroService } from './hero.service';
  
 const routes: Routes = [{
 	path: '',
 	data: {
-      title: 'Test',
-      urls: [{title: 'Test', url: '/'},{title: 'ngComponent'},{title: 'Test'}]
+      title: 'Hero',
+      urls: [{title: 'Hero', url: '/'},{title: 'ngComponent'},{title: 'Hero'}]
     },
-	component: NgbdTestBasic
+	component: NgbdHeroBasic  
 }];
 
 @NgModule({
 	imports: [
     	FormsModule,
     	CommonModule,
+       
       NgbModule.forRoot(),
     	RouterModule.forChild(routes)
     ],
-	declarations: [NgbdTestBasic]
+	declarations: [NgbdHeroBasic ]
 })
-export class TestModule { }
+export class HeroModule { }

@@ -13,7 +13,7 @@ import { FormControl } from '@angular/forms';
 
 
 
-const my = new Date();
+
 
 @Component({
   selector: 'ngbd-dropdown-basic',
@@ -32,46 +32,9 @@ export class NgbdTrainingBasic {
 
 
 
-  // this is for the Closeable Alert
-  @Input()
-  public alerts: Array<IAlert> = [];
-
-  private backup: Array<IAlert>;
-  constructor() {
-    this.alerts.push({
-      id: 1,
-      type: 'success',
-      message: 'This is an success alert',
-    }, {
-        id: 2,
-        type: 'info',
-        message: 'This is an info alert',
-      }, {
-        id: 3,
-        type: 'warning',
-        message: 'This is a warning alert',
-      }, {
-        id: 4,
-        type: 'danger',
-        message: 'This is a danger alert',
-      });
-    this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
-  }
-
-  public closeAlert(alert: IAlert) {
-    const index: number = this.alerts.indexOf(alert);
-    this.alerts.splice(index, 1);
-  }
-
-  public reset() {
-    this.alerts = this.backup.map((alert: IAlert) => Object.assign({}, alert));
-  }
-  // End the Closeable Alert
-
-
 
   // customize default values of carousels used by this component tree
-  interval = 500;
+  interval = 100;
   wrap = true;
   keyboard = true;
   pauseOnHover = true;
@@ -81,23 +44,8 @@ export class NgbdTrainingBasic {
 
 
 
-  // This is for the  datepicker
-  model: NgbDateStruct;
-  model2;
-  date: { year: number, month: number };
 
-  selectToday() {
-    this.model = { year: my.getFullYear(), month: my.getMonth() + 1, day: my.getDate() };
-  }
-
-
-
-  // customize default values of progress bars used by this component tree
-  config: NgbProgressbarConfig
-  max = 1000;
-  striped = true;
-  animated = true;
-  type = 'success';
+ 
 
 
   // This is for Multiple Tabs
@@ -109,13 +57,6 @@ export class NgbdTrainingBasic {
 
 
 
-  // This is for Time Picker
-  time = { hour: 13, minute: 30 };
-  meridian = true;
-
-  toggleMeridian() {
-    this.meridian = !this.meridian;
-  }
 
   // This is for the seconds
   seconds = true;
@@ -124,18 +65,8 @@ export class NgbdTrainingBasic {
     this.seconds = !this.seconds;
   }
 
-  // This is for the spinners
-  spinners = true;
 
-  toggleSpinners() {
-    this.spinners = !this.spinners;
-  }
 
-  // This is for the column step
-  time2: NgbTimeStruct = { hour: 13, minute: 30, second: 0 };
-  hourStep = 1;
-  minuteStep = 15;
-  secondStep = 30;
 
   // This is for the validation
   time3;
